@@ -16,13 +16,13 @@
 <style type="text/css">
 	.fondo1 {background-color: aqua; height: 9090px}
 	.bg-inverse{background-color: black;}
-	.bg-primary{transition: all 1s ease;}
+	.bg-primary{transition: all 1s ease; } /*Realiza transicion lenta entre los colores*/ 
 </style>
 	
 </head>
 
 <body>
-<nav class="navbar navbar-default ">
+<nav id="menu" class="navbar navbar-default navbar-fixed-top bg-primary">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -72,5 +72,17 @@
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.js"></script>
+    
+    
+	<!--Funcion cambio de color-->
+	<script>
+      $(window).scroll(function() {
+        if ($("#menu").offset().top > 56) {
+            $("#menu").addClass("bg-inverse");
+        } else {
+            $("#menu").removeClass("bg-inverse");
+        }
+      });
+    </script>
 </body>
 </html>
