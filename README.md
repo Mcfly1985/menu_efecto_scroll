@@ -4,7 +4,7 @@ Para comenzar a trabajar necesitamos tener instalada Bootstrap 4, esta contine u
 - comenzaremos con un index base.
 - le agregaremos a la barra de menu la propiedad fixed.
 - agregaremos el Jscript y asignaremos el ID a la barra de menu.
-- luego le agregaremos los estilos CSS.
+- luego le agregaremos los estilos CSS (transition).
 
 ***
 
